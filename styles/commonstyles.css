@@ -20,6 +20,15 @@ h3{
 .desc{
     font-size: 1em;
 }
+a.bh {
+    font-style: italic;
+    text-decoration: none;
+}
+
+a.bh:hover {
+    color: #141414 !important;
+}
+
 /* FONTS */
 .im-fell-double-pica-regular {
     font-family: "IM Fell Double Pica", serif;
@@ -58,4 +67,52 @@ background: linear-gradient(114deg, rgba(255,223,234,1) 0%, rgba(255,183,195,1) 
 }
 .loguitos{
     width: 3.938em;
+}
+/* Efecto de tarjeta de papel */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-image: url('https://www.transparenttextures.com/patterns/corrugation.png');
+    background-size: cover;
+}
+
+/* Efecto al pasar el mouse */
+.card:hover {
+    transform: translateY(-10px) rotate(-2deg);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Sombra interna para dar más sensación de papel */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+    filter: blur(5px);
+    transform: rotate(2deg);
+}
+
+/* Animación divertida de 'flotar' */
+.card:hover {
+    animation: float 0.3s ease-in-out;
+}
+
+/* Definición de la animación float */
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-5px) rotate(-1deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
 }
