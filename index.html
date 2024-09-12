@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Celena Moscovich</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="logo.svg" alt="Logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre Mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Intro Section -->
+<section id="intro" class="text-center">
+    <div class="container">
+        <h1>Nombre de la Desarrolladora</h1>
+        <img src="developer.svg" alt="Developer SVG" class="img-fluid">
+        <p class="lead">Pequeña descripción sobre la desarrolladora.</p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Proyectos</h2>
+        
+        <h3>Mis experiencias</h3>
+        <div id="carouselExperiencias" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Añade aquí tus imágenes -->
+                <div class="carousel-item active">
+                    <img src="experience1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="experience2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <!-- Más imágenes -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExperiencias" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExperiencias" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h3 class="mt-5">Mis estudios</h3>
+        <div id="carouselEstudios" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="study1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="study2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <!-- Más imágenes -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstudios" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEstudios" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <h3 class="mt-5">Mis ilustraciones</h3>
+        <div id="carouselIlustraciones" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="illustration1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="illustration2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <!-- Más imágenes -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIlustraciones" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIlustraciones" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Sobre Mí</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Primer párrafo descriptivo sobre la desarrolladora.</p>
+                <p>Segundo párrafo descriptivo sobre la desarrolladora.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="about-me.png" alt="Ilustración" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact" class="bg-dark text-white text-center py-3">
+    <p>Contacto: <a href="mailto:email@example.com" class="text-white">email@example.com</a></p>
+    <p>Redes sociales: <a href="#" class="text-white">Instagram</a>, <a href="#" class="text-white">LinkedIn</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

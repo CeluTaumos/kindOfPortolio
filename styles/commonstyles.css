@@ -1,0 +1,6 @@
+
+
+.gradient-light-pink{
+background: rgb(255,223,234);
+background: linear-gradient(114deg, rgba(255,223,234,1) 0%, rgba(255,183,195,1) 100%);
+}
