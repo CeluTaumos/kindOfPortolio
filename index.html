@@ -5,48 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Celena Moscovich</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/commonstyles.css">
+
+<!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<header class="gradient-light-pink ">
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light gradient-light-pink ">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            <img src="logo.svg" alt="Logo" class="logo">
+            <img src="./assets/celena-log.svg" alt="Logotipo Celena" class="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end im-fell-double-pica-regular" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link dark-gray" href="#projects">PROYECTOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Proyectos</a>
+                    <a class="nav-link dark-gray" href="#about">SOBRE MÍ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">Sobre Mí</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contacto</a>
+                    <a class="nav-link dark-gray" href="#contact">¿HABLAMOS?</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
+</header>
+<main>
 <!-- Intro Section -->
-<section id="intro" class="text-center">
-    <div class="container">
-        <h1>Nombre de la Desarrolladora</h1>
-        <img src="developer.svg" alt="Developer SVG" class="img-fluid">
-        <p class="lead">Pequeña descripción sobre la desarrolladora.</p>
+<section id="intro" class="text-center gradient-pinkish">
+   
+    
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="row w-100">
+            <div class="col-md-6 d-flex justify-content-end align-items-center">
+                <img src="./assets/celeSketch.png" alt="Celena's Illustration" class="img-fluid">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                <img src="./assets/celenaMoscovich-log.svg" alt="Celena Moscovich Logo" class="logo-intro">
+                <h1 class="im-fell-double-pica-regular text-center">FullStack Developer e Ilustradora</h1>
+                <p class="lead text-center">Con cada proyecto, fusiono técnica y creatividad para lograr resultados originales.</p>
+            </div> 
+        </div>
     </div>
 </section>
-
 <!-- Projects Section -->
-<section id="projects" class="py-5">
+<section id="projects " class="py-5 gradient-dusk">
     <div class="container">
         <h2 class="text-center mb-5">Proyectos</h2>
         
@@ -131,7 +146,7 @@
         </div>
     </div>
 </section>
-
+</main>
 <!-- Footer -->
 <footer id="contact" class="bg-dark text-white text-center py-3">
     <p>Contacto: <a href="mailto:email@example.com" class="text-white">email@example.com</a></p>

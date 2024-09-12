@@ -1,6 +1,45 @@
+*{
+  color: #444444 !important;
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1{
+    color: #141414 !important;  
+}
+/* FONTS */
+.im-fell-double-pica-regular {
+    font-family: "IM Fell Double Pica", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
-
+/*COLORS */
+.dark-gray{
+    color: #141414 !important;   
+}
+.dark-gray:hover {
+    color: #665e5e !important;
+    transition: 0.5s;
+}
 .gradient-light-pink{
 background: rgb(255,223,234);
 background: linear-gradient(114deg, rgba(255,223,234,1) 0%, rgba(255,183,195,1) 100%);
+}
+.gradient-pinkish{
+    background: rgb(255,228,225);
+    background: linear-gradient(6deg, rgba(255,228,225,1) 26%, rgba(255,244,243,1) 93%);
+
+}
+.gradient-dusk{
+    background: rgb(255,203,164);
+    background: linear-gradient(184deg, rgba(255,203,164,1) 48%, rgba(255,183,195,1) 68%);
+}
+/*logotipos*/
+.logo {
+    width: 5em;
+    height: 2.25em;
+}
+.logo-intro{
+    width: 18.75em;
 }
