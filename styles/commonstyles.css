@@ -4,8 +4,21 @@
   font-weight: 400;
   font-style: normal;
 }
+/*texto*/
 h1{
     color: #141414 !important;  
+}
+h2{
+    font-family: "IM Fell French Canon SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 1.438em;
+}
+h3{
+    color: #141414 !important;
+}
+.desc{
+    font-size: 1em;
 }
 /* FONTS */
 .im-fell-double-pica-regular {
@@ -42,4 +55,7 @@ background: linear-gradient(114deg, rgba(255,223,234,1) 0%, rgba(255,183,195,1) 
 }
 .logo-intro{
     width: 18.75em;
+}
+.loguitos{
+    width: 3.938em;
 }
