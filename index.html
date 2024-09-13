@@ -48,13 +48,12 @@
 <main>
 <!-- Intro Section -->
 <section id="intro" class="text-center gradient-pinkish">
-    
     <div class="container d-flex justify-content-center align-items-center">
         <div class="row w-100">
-            <div class="col-md-6 d-flex justify-content-end align-items-center">
+            <div class="col-md-6 d-flex justify-content-end align-items-center fade-in" id="intro-img">
                 <img src="./assets/celeSketch.png" alt="Celena's Illustration" class="img-fluid">
             </div>
-            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center fade-in" id="intro-text">
                 <img src="./assets/celenaMoscovich-log.svg" alt="Celena Moscovich Logo" class="logo-intro">
                 <h1 class="im-fell-double-pica-regular text-center">Full Stack Web Developer and Digital Illustrator</h1>
                 <p class="lead text-center"> <strong>Student at Universidad Nacional de La Matanza</strong></p>
@@ -63,32 +62,29 @@
         </div>
     </div>
 </section>
+
 <!-- Phrase Section -->
-<section id="phrase" class="py-3 gradient-pink ">
+<section id="phrase" class="py-3 gradient-pink">
     <div class="container text-center">
-        <p class="typewriter-animation fs-3">“El código limpio es un arte, y un buen programador es un artista."</p>
-        <p class="im-fell-double-pica-regular fs-4  dark-gray typewriter-animation">Robert C. Martin aka Uncle Bob</p>
+        <p class="typewriter-animation fs-3 slide-up">“El código limpio es un arte, y un buen programador es un artista."</p>
+        <p class="im-fell-double-pica-regular fs-4 dark-gray typewriter-animation slide-up">Robert C. Martin aka Uncle Bob</p>
     </div>
 </section>
-<!-- Projects Section --> 
+<!-- Projects Section -->
 <section id="projects" class="py-5 gradient-dusk">
     <div class="container">
-        <div class="d-flex justify-content-start align-items-center mb-5">
+        <div class="d-flex justify-content-start align-items-center mb-5 fade-in" id="projects-title">
             <img src="./assets/icons/folder.svg" alt="Folder Illustration" class="loguitos me-3">
             <h2 class="text-center">PROYECTOS</h2>
         </div>
         <div class="row">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 slide-up" id="project1">
                 <h3>-- Maquetado de Intraconsulta</h3>
-                <p class="text-justify">Este fue un trabajo para la materia Visualización e Interfaces. El proyecto se centró en la renovación y actualización de la interfaz de la
-                    plataforma <a href="https://alumno2.unlam.edu.ar/" class="fst-italic">Intraconsulta</a>, la cual permite a los usuarios visualizar su información
-                    académica. El objetivo era mejorar la navegación, optimizar el flujo de
-                    usuario y modernizar la interfaz haciendo que sea coherente con el estilo de la plataforma oficial de las materias de la Universidad Nacional de La Matanza <a href="https://miel.unlam.edu.ar/" class="fst-italic">Miel</a>.
-                </p>
-                <div id="carouselExperiencias" class="carousel slide" data-bs-ride="carousel">
+                <p class="text-justify">Este fue un trabajo para la materia Visualización e Interfaces. El proyecto se centró en la renovación y actualización de la interfaz de la plataforma <a href="https://alumno2.unlam.edu.ar/" class="fst-italic">Intraconsulta</a>, la cual permite a los usuarios visualizar su información académica. El objetivo era mejorar la navegación, optimizar el flujo de usuario y modernizar la interfaz haciendo que sea coherente con el estilo de la plataforma oficial de las materias de la Universidad Nacional de La Matanza <a href="https://miel.unlam.edu.ar/" class="fst-italic">Miel</a>.</p>
+                <div id="carouselExperiencias" class="carousel slide scale-up" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./assets/designs/intraconsulta/home.png" class="d-block w-100" alt="Home Intraconsulta" >
+                            <img src="./assets/designs/intraconsulta/home.png" class="d-block w-100" alt="Home Intraconsulta">
                         </div>
                         <div class="carousel-item">
                             <img src="./assets/designs/intraconsulta/wi-home.png" class="d-block w-100" alt="Wireframe Inicio">
@@ -97,10 +93,10 @@
                             <img src="./assets/designs/intraconsulta/inicio.png" class="d-block w-100" alt="Vista Inicio">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/designs/intraconsulta/wi-inicio.png" class="d-block w-100" alt="Tramites Wireframe" >
+                            <img src="./assets/designs/intraconsulta/wi-inicio.png" class="d-block w-100" alt="Tramites Wireframe">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/designs/intraconsulta/popup.png" class="d-block w-100" alt="Popup Vista" >
+                            <img src="./assets/designs/intraconsulta/popup.png" class="d-block w-100" alt="Popup Vista">
                         </div>
                         <div class="carousel-item">
                             <img src="./assets/designs/intraconsulta/wi-tramite.png" class="d-block w-100" alt="Materias Wireframe">
@@ -117,17 +113,16 @@
                 </div>
             </div>
 
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 slide-up" id="project2">
                 <h3>-- Animalia</h3>
-                <p class="text-justify">Este proyecto fue desarrollado para la materia Programación Web II, en la que aprendimos a aplicar el patrón MVC en un sitio de juegos en línea. El código fue implementado utilizando PHP, JavaScript (incluyendo AJAX), y Mustache para renderizar las vistas, entre otras tecnologías. Podés verlo completo <a href="https://github.com/CeluTaumos/animalia--tpw2" class="fst-italic">aquí</a>.
-                </p>
-                <div id="carouselEstudios" class="carousel slide" data-bs-ride="carousel">
+                <p class="text-justify">Este proyecto fue desarrollado para la materia Programación Web II, en la que aprendimos a aplicar el patrón MVC en un sitio de juegos en línea. El código fue implementado utilizando PHP, JavaScript (incluyendo AJAX), y Mustache para renderizar las vistas, entre otras tecnologías. Podés verlo completo <a href="https://github.com/CeluTaumos/animalia--tpw2" class="fst-italic">aquí</a>.</p>
+                <div id="carouselEstudios" class="carousel slide scale-up" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./assets/designs/horner/bienvenido.png" class="d-block w-100" alt="Animalia" >
+                            <img src="./assets/designs/horner/bienvenido.png" class="d-block w-100" alt="Animalia">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/designs/horner/editarPerfil.png" class="d-block w-100" alt="Animalia" >
+                            <img src="./assets/designs/horner/editarPerfil.png" class="d-block w-100" alt="Animalia">
                         </div>
                         <div class="carousel-item">
                             <img src="./assets/designs/horner/estadoAplicacion.png" class="d-block w-100" alt="Animalia">
@@ -136,10 +131,10 @@
                             <img src="./assets/designs/horner/bienvenidoAlter.png" class="d-block w-100" alt="Animalia">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/designs/horner/estadísticas.png" class="d-block w-100" alt="Animalia" >
+                            <img src="./assets/designs/horner/estadísticas.png" class="d-block w-100" alt="Animalia">
                         </div>
                         <div class="carousel-item">
-                            <img src="./assets/designs/horner/vistaJuego.png" class="d-block w-100" alt="Animalia" >
+                            <img src="./assets/designs/horner/vistaJuego.png" class="d-block w-100" alt="Animalia">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstudios" data-bs-slide="prev">
@@ -155,10 +150,10 @@
         </div>
 
         <div class="row mt-5">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 slide-up" id="project3">
                 <h3>-- Turtle</h3>
                 <p class="text-justify">Este proyecto fue un trabajo de diseño de interfaz para la materia Introducción al Diseño Gráfico. No solo nos enfocamos en crear el diseño, sino que también desarrollamos la síntesis de la marca y seleccionamos una paleta de colores. Parte del proyecto incluía la elaboración del brief y la búsqueda de una identidad para la marca. En este caso, trabajamos con Turtle, una empresa ficticia que ofrece asesoría en slow travel.</p>
-                <div id="carouselTurtle" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselTurtle" class="carousel slide scale-up" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./assets/designs/turtle/home.png" class="d-block w-100" alt="Turtle home">
@@ -184,10 +179,10 @@
                 </div>
             </div>
         
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 slide-up" id="project4">
                 <h3>-- CarpiCursos</h3>
                 <p class="text-justify">Este es un proyecto realizado en colaboración, diseñado para el dictado de cursos de programación a través de la web. Aquí trabajamos con un equipo de 5 personas y el resultado fue un sitio funcional que permite inscripciones, pagos, y el acceso a cursos de capacitación. Lo pueden encontrar en <a href="https://github.com/CeluTaumos/CarpiCursos" class="fst-italic">aquí</a>.</p>
-                <div id="carouselCarpiCursos" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselCarpiCursos" class="carousel slide scale-up" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./assets/designs/carpycode/home.png" class="d-block w-100" alt="CarpiCursos cursos">
@@ -210,43 +205,41 @@
                 </div>
             </div>
         </div>
-        
+    </div>
 </section>
-
 
 
 <!-- About Me Section -->
 <section id="about" class="py-5 gradient-pinkish">
     <div class="container">
 
-        <div class="d-flex justify-content-start align-items-center mb-5">
+        <div class="d-flex justify-content-start align-items-center mb-5 fade-in">
             <img src="./assets/icons/pencil.svg" alt="pencil Illustration" class="loguitos me-3">
             <h2 class="text-center">SOBRE MÍ</h2>
         </div>
         <div class="container mt-5">
             <div class="row justify-content-center align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6 fade-in">
                     <h3 class="mb-2">-- ¿Por qué hago lo que hago?</h3>
                     <p class="lead">Amo las computadoras (por lo menos, cuando funcionan bien). El cariño que les tengo empezó cuando mis papás me regalaron una tableta gráfica cuando cumplí quince. 
                         Al principio sólo sabía dibujar, pero con el tiempo, en mi afán digital, descubrí la programación y se desbloqueó un universo de posibilidades que disfruto descubrir cada día.</p>
                     <p class="lead">Me enseñaron que las interfaces son la conexión entre los usuarios y las computadoras, y desde que decidí recorrer este camino, esa es mi aspiración. Ser un puente entre las personas y la tecnología (o por lo menos, parte de ese proceso).</p>
                 </div>
-                <div class="col-md-4 d-flex justify-content-center">
+                <div class="col-md-4 d-flex justify-content-center fade-in">
                     <img src="./assets/pcsketch.png" alt="My Computer Sketch" class="img-fluid" style="max-height: 100%;">
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row mb-4">
-                <div class="col-md-6 d-flex flex-column justify-content-center ">
+                <div class="col-md-6 d-flex flex-column justify-content-center fade-in">
                     <img src="./assets/ilustrations/jump.png" alt="yo estudiando" class="img-fluid w-50 mx-auto">
                     <h4 class="text-center">Cositas que ya manejo</h4>
                     <div class="row mt-4">
-                       
                         <div class="col-md-6 mb-4">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">AS FRONTEND</h5>
+                                    <h5 class="card-title">EN FRONTEND</h5>
                                     <ul class="list-unstyled">
                                         <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
                                         <li><i class="fab fa-react"></i> React</li>
@@ -262,7 +255,7 @@
                         <div class="col-md-6 mb-4">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h5 class="card-title">AS BACKEND</h5>
+                                    <h5 class="card-title">EN BACKEND</h5>
                                     <ul class="list-unstyled">
                                         <li><i class="fab fa-java"></i> Java</li>
                                         <li><i class="fab fa-cuttlefish"></i> C#</li>
@@ -276,7 +269,7 @@
                     </div>
                 </div>
             
-                <div class="col-md-6 d-flex flex-column justify-content-center">
+                <div class="col-md-6 d-flex flex-column justify-content-center fade-in">
                     <h3 class="text-end mr-2">-- Mis estudios</h3>
                     <p class=" lead text-end mr-2">Estudio en la <span class="italic">Universidad Nacional de La Matanza</span> una Tecnicatura en Desarrollo Web, pero a lo largo de los años también hice diversos cursos para complementar lo que fui aprendiendo.Cuento con un nivel de inglés B1 certificado por Cambridge. También participe de programas como STEM UP!,he hice cursos en Coderhouse,Educacion IT y Funiversity.</p>
                     <div id="carouselEstudios" class="carousel slide" data-bs-ride="carousel">
@@ -312,11 +305,9 @@
                 </div>
             </div>
             
-        
             <div class="container">
                 <div class="row">
-                 
-                    <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <div class="col-md-6 d-flex flex-column justify-content-center fade-in">
                         <h3>-- Mis ilustraciones</h3>
                         <p class="desc">Empecé por diversión, pero con el tiempo empecé a recibir comisiones y me volví freelancer. No suelo compartir los trabajos personalizados porque, en algún punto de la historia, decidí mantener una estética y los pedidos no seguían una. En su lugar, acá muestro algunos que hice por diversión. Suelo hacer también pequeñas ilustraciones para las interfaces que debo diseñar. Amo combinar lo mejor de la programación con la ilustración.</p>
                         <div id="carouselIlustraciones" class="carousel slide" data-bs-ride="carousel">
@@ -341,18 +332,11 @@
                             </button>
                         </div>
                     </div>
-            
-    
-                    <div class="col-md-6 d-flex flex-column justify-content-center">
-                     
-                      
-                            <img src="./assets/ilustrations/sheDraw.png" alt="yo dibujando" class="img-fluid w-50 mx-auto">
-                            <h4 class="text-center">Algunos de mis Skills</h4>
-                   
-            
-               
+
+                    <div class="col-md-6 d-flex flex-column justify-content-center fade-in">
+                        <img src="./assets/ilustrations/sheDraw.png" alt="yo dibujando" class="img-fluid w-50 mx-auto">
+                        <h4 class="text-center">Algunos de mis Skills</h4>
                         <div class="row">
-                    
                             <div class="col-md-6 mb-4">
                                 <div class="card h-100">
                                     <div class="card-body">
@@ -366,7 +350,7 @@
                                     </div>
                                 </div>
                             </div>
-            
+
                             <!-- Card 2: As Person -->
                             <div class="col-md-6 mb-4">
                                 <div class="card h-100">
@@ -385,74 +369,124 @@
                     </div>
                 </div>
             </div>
-            
+        </div>
+    </div>
 </section>
-<section id="contact" class="py-5 gradient-pink"> 
+<section id="contact" class="py-5 gradient-pink">
     <div class="container">
-        <div class="d-flex justify-content-start align-items-center mb-5">
+        <div class="d-flex justify-content-start align-items-center mb-5 fade-in">
             <img src="./assets/icons/phone.svg" alt="phone Illustration" class="loguitos me-3">
             <h2 class="text-center">¿HABLAMOS?</h2>
         </div>
-  
-      <div class="row align-items-center">
-        <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
-          <img src="./assets/celenaMoscovich-log.svg" alt="Celena" class="img-fluid w-75">
+        
+        <div class="row align-items-center">
+            <div class="col-md-3 text-center text-md-start mb-3 mb-md-0 slide-up">
+                <img src="./assets/celenaMoscovich-log.svg" alt="Celena" class="img-fluid w-75">
+            </div>
+            
+            <div class="col-md-9">
+                <p class="fs-4 text-end fade-in">Si te gusta llevar ideas coloridas a la vida, desenredar sistemas complicados o simplemente querés ver más...acá están mis redes para que estemos en contacto :</p>
+                <div class="row">
+                    <!-- Book 1 -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex justify-content-center fade-in">
+                        <div class="book text-center d-flex flex-column justify-content-center align-items-center">
+                            <a href="mailto:celena.ark@gmail.com">celena.ark@gmail.com</a>
+                            <div class="cover d-flex justify-content-center align-items-center">
+                                <img src="./assets/redes/arroba-gray.svg" alt="mail" class="loguitos">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 2 -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex justify-content-center fade-in">
+                        <div class="book text-center d-flex flex-column justify-content-center align-items-center">
+                            <a href="https://www.linkedin.com/in/celenamoscovich">LinkedIn</a>
+                            <div class="cover d-flex justify-content-center align-items-center">
+                                <img src="./assets/redes/linkedin-gray.svg" alt="linkedin" class="loguitos">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 3 -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex justify-content-center fade-in">
+                        <div class="book text-center d-flex flex-column justify-content-center align-items-center">
+                            <a href="https://github.com/CeluTaumos">GitHub</a>
+                            <div class="cover d-flex justify-content-center align-items-center">
+                                <img src="./assets/redes/github-gr.svg" alt="github" class="loguitos">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Book 4 -->
+                    <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex justify-content-center fade-in">
+                        <div class="book text-center d-flex flex-column justify-content-center align-items-center">
+                            <a href="https://www.behance.net/luzzznocturnaaa">Behance</a>
+                            <div class="cover d-flex justify-content-center align-items-center">
+                                <img src="./assets/redes/behance-gr.svg" alt="behance" class="loguitos">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-  
-        <div class="col-md-9">
-          <div class="row">
-            <!-- Book 1 -->
-            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex justify-content-center">
-              <div class="book text-center d-flex flex-column justify-content-center align-items-center">
-                <p>celena.ark@gmail.com</p>
-                <div class="cover d-flex justify-content-center align-items-center">
-                  <img src="./assets/redes/arroba-gray.svg" alt="mail" class="loguitos">
-                </div>
-              </div>
-            </div>
-            
-            <!-- Book 2 -->
-            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex justify-content-center">
-              <div class="book text-center d-flex flex-column justify-content-center align-items-center">
-                <a href="https://www.linkedin.com/in/celenamoscovich">LinkedIn</a>
-                <div class="cover d-flex justify-content-center align-items-center">
-                  <img src="./assets/redes/linkedin-gray.svg" alt="linkedin" class="loguitos">
-                </div>
-              </div>
-            </div>
-            
-            <!-- Book 3 -->
-            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex justify-content-center">
-              <div class="book text-center d-flex flex-column justify-content-center align-items-center">
-                <a href="https://github.com/CeluTaumos">GitHub</a>
-                <div class="cover d-flex justify-content-center align-items-center">
-                  <img src="./assets/redes/github-gr.svg" alt="github" class="loguitos">
-                </div>
-              </div>
-            </div>
-            
-            <!-- Book 4 -->
-            <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex justify-content-center">
-              <div class="book text-center d-flex flex-column justify-content-center align-items-center">
-                <a href="https://www.behance.net/luzzznocturnaaa">Behance</a>
-                <div class="cover d-flex justify-content-center align-items-center">
-                  <img src="./assets/redes/behance-gr.svg" alt="behance" class="loguitos">
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
+
   
 </main>
 <!-- Footer -->
-<footer  class="bg-dark text-white py-3">
-   
-  </footer>
+<footer class="gradient-dusk py-3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <div class="social-links text-center">
+                    <a href="mailto:celena.ark@gmail.com" class="text-decoration-none me-3">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                    <a href="https://www.behance.net/luzzznocturnaaa" target="_blank" class="text-decoration-none me-3">
+                        <i class="fab fa-behance fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/CeluTaumos" target="_blank" class="text-decoration-none me-3">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/celenamoscovich" target="_blank" class="text-decoration-none">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Configuración del IntersectionObserver
+        const observerOptions = {
+            root: null, // Observa el viewport
+            rootMargin: '0px',
+            threshold: 0.1 // Porcentaje del elemento visible para activar la animación
+        };
+
+        // Crear un nuevo IntersectionObserver
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observa los elementos con las clases para animación
+        document.querySelectorAll('.fade-in, .slide-up, .scale-up').forEach(element => {
+            observer.observe(element);
+        });
+    });
+</script>
