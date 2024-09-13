@@ -20,22 +20,22 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light gradient-light-pink ">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
             <img src="./assets/celena-log.svg" alt="Logotipo Celena" class="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end im-fell-double-pica-regular" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end im-fell-double-pica-regular me-3" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link dark-gray" href="#projects">PROYECTOS</a>
+                    <a class="nav-link" href="#projects">PROYECTOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link dark-gray" href="#about">SOBRE MÍ</a>
+                    <a class="nav-link" href="#about">SOBRE MÍ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link dark-gray" href="#contact">¿HABLAMOS?</a>
+                    <a class="nav-link" href="#contact">¿HABLAMOS?</a>
                 </li>
             </ul>
         </div>
@@ -53,109 +53,171 @@
             </div>
             <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
                 <img src="./assets/celenaMoscovich-log.svg" alt="Celena Moscovich Logo" class="logo-intro">
-                <h1 class="im-fell-double-pica-regular text-center">FullStack Developer e Ilustradora</h1>
+                <h1 class="im-fell-double-pica-regular text-center">Full Stack Web Developer and Digital Illustrator</h1>
+                <p class="lead text-center"> <strong>Student at Universidad Nacional de La Matanza</strong></p>
                 <p class="lead text-center">Con cada proyecto, fusiono técnica y creatividad para lograr resultados originales.</p>
             </div> 
         </div>
     </div>
 </section>
-<!-- Projects Section -->
-<section id="projects " class="py-5 gradient-dusk">
+<!-- Phrase Section -->
+<section id="phrase" class="py-3 gradient-pink ">
+    <div class="container text-center">
+        <p class="typewriter-animation fs-3">“El código limpio es un arte, y un buen programador es un artista."</p>
+        <p class="im-fell-double-pica-regular fs-4  dark-gray typewriter-animation">Robert C. Martin aka Uncle Bob</p>
+    </div>
+</section>
+<!-- Projects Section --> 
+<section id="projects" class="py-5 gradient-dusk">
     <div class="container">
         <div class="d-flex justify-content-start align-items-center mb-5">
-            <img src="./assets/redes/folder.svg" alt="Folder Illustration" class="loguitos me-3">
+            <img src="./assets/icons/folder.svg" alt="Folder Illustration" class="loguitos me-3">
             <h2 class="text-center">PROYECTOS</h2>
         </div>
-        <h3>-- Mis experiencias</h3>
-        <div id="carouselExperiencias" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="experience1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="experience2.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExperiencias" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExperiencias" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <h3 class="mt-5">-- Mis estudios</h3>
-        <p class="desc">Estudio en la <strong>Universidad Nacional de La Matanza</strong> una Tecnicatura en Desarrollo Web. Pero además, para complementar, he hecho cursos en Coderhouse, Funiversity, EducaciónIT, y también he participado de programas para mujeres en tecnología como STEM UP! </p>
-        <p>(oﾟvﾟ)ノAdemás, soy B2 en inglés y cuento con el certificado Superior de Cambridge.</p>
-        <div id="carouselEstudios" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner w-50 mx-auto">
-                <div class="carousel-item active">
-                    <img src="./assets/certificados/educacionit.png" class="d-block w-100" alt="EducacionIT Java Spring Certificate">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/certificados/coder.png" class="d-block w-100" alt="CoderHouse Web Development Certificate">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/certificados/englishsup.jpg" class="d-block w-100" alt="Cambridge Superior Certificate">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/certificados/ilustration.jpg" class="d-block w-100" alt="Funiversity Illustration Certificate">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/certificados/qa.jpeg" class="d-block w-100" alt="QA Egg Certificate">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/certificados/stemup.png" class="d-block w-100" alt="Stem Up Certificate">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h3>-- Maquetado de Intraconsulta</h3>
+                <p class="text-justify">Este fue un trabajo para la materia Visualización e Interfaces. El proyecto se centró en la renovación y actualización de la interfaz de la
+                    plataforma <a href="https://alumno2.unlam.edu.ar/" class="fst-italic">Intraconsulta</a>, la cual permite a los usuarios visualizar su información
+                    académica. El objetivo era mejorar la navegación, optimizar el flujo de
+                    usuario y modernizar la interfaz haciendo que sea coherente con el estilo de la plataforma oficial de las materias de la Universidad Nacional de La Matanza <a href="https://miel.unlam.edu.ar/" class="fst-italic">Miel</a>.
+                </p>
+                <div id="carouselExperiencias" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/designs/intraconsulta/home.png" class="d-block w-100" alt="Home Intraconsulta" >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/intraconsulta/wi-home.png" class="d-block w-100" alt="Wireframe Inicio">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/intraconsulta/inicio.png" class="d-block w-100" alt="Vista Inicio">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/intraconsulta/wi-inicio.png" class="d-block w-100" alt="Tramites Wireframe" >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/intraconsulta/popup.png" class="d-block w-100" alt="Popup Vista" >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/intraconsulta/wi-tramite.png" class="d-block w-100" alt="Materias Wireframe">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExperiencias" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExperiencias" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstudios" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselEstudios" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+
+            <div class="col-md-6 mb-4">
+                <h3>-- Animalia</h3>
+                <p class="text-justify">Este proyecto fue desarrollado para la materia Programación Web II, en la que aprendimos a aplicar el patrón MVC en un sitio de juegos en línea. El código fue implementado utilizando PHP, JavaScript (incluyendo AJAX), y Mustache para renderizar las vistas, entre otras tecnologías. Podés verlo completo <a href="https://github.com/CeluTaumos/animalia--tpw2" class="fst-italic">aquí</a>.
+                </p>
+                <div id="carouselEstudios" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/designs/horner/bienvenido.png" class="d-block w-100" alt="Animalia" >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/horner/editarPerfil.png" class="d-block w-100" alt="Animalia" >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/horner/estadoAplicacion.png" class="d-block w-100" alt="Animalia">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/horner/bienvenidoAlter.png" class="d-block w-100" alt="Animalia">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/horner/estadísticas.png" class="d-block w-100" alt="Animalia" >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/horner/vistaJuego.png" class="d-block w-100" alt="Animalia" >
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstudios" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselEstudios" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
 
-        <h3 class="mt-5">-- Mis ilustraciones</h3>
-        <p>Algunos trabajos que he hecho a lo largo del tiempo. Si querés ver más ,sos libre de visitar mi <a href="https://www.behance.net/luzzznocturnaaa" class="bh">Behance</a>
-        </p>
-        <div id="carouselIlustraciones" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active text-center">
-                    <img src="./assets/ilustrations/ella.png" class="d-block w-50 mx-auto" alt="illustration girl listening to music">
-                </div>
-                <div class="carousel-item text-center">
-                    <img src="./assets/ilustrations/enloquecer.png" class="d-block w-50 mx-auto" alt="illustration girl in a bus">
-                </div>
-                <div class="carousel-item text-center">
-                    <img src="./assets/ilustrations/listeningto.png" class="d-block w-50 mx-auto" alt="illustration girl's face listening to music">
+        <div class="row mt-5">
+            <div class="col-md-6 mb-4">
+                <h3>-- Turtle</h3>
+                <p class="text-justify">Este proyecto fue un trabajo de diseño de interfaz para la materia Introducción al Diseño Gráfico. No solo nos enfocamos en crear el diseño, sino que también desarrollamos la síntesis de la marca y seleccionamos una paleta de colores. Parte del proyecto incluía la elaboración del brief y la búsqueda de una identidad para la marca. En este caso, trabajamos con Turtle, una empresa ficticia que ofrece asesoría en slow travel.</p>
+                <div id="carouselTurtle" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/designs/turtle/home.png" class="d-block w-100" alt="Turtle home">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/turtle/asesoria.png" class="d-block w-100" alt="Turtle inicio">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/turtle/detalle.png" class="d-block w-100" alt="Turtle interfaz">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/turtle/paleta.png" class="d-block w-100" alt="Turtle Paleta">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTurtle" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTurtle" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIlustraciones" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselIlustraciones" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="col-md-6 mb-4">
+                <h3>-- CarpiCursos</h3>
+                <p class="text-justify">Este es un proyecto realizado en colaboración, diseñado para el dictado de cursos de programación a través de la web. Aquí trabajamos con un equipo de 5 personas y el resultado fue un sitio funcional que permite inscripciones, pagos, y el acceso a cursos de capacitación. Lo pueden encontrar en <a href="https://github.com/CeluTaumos/CarpiCursos" class="fst-italic">aquí</a>.</p>
+                <div id="carouselCarpiCursos" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/designs/carpycode/home.png" class="d-block w-100" alt="CarpiCursos cursos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/carpycode/contacto.png" class="d-block w-100" alt="CarpiCursos contacto">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/designs/carpycode/giftcard.png" class="d-block w-100" alt="CarpiCursos giftcard">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCarpiCursos" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCarpiCursos" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
-
-    </div>
+        
 </section>
+
+
 
 <!-- About Me Section -->
 <section id="about" class="py-5 gradient-pinkish">
     <div class="container">
 
         <div class="d-flex justify-content-start align-items-center mb-5">
-            <img src="./assets/redes/pencil.svg" alt="pencil Illustration" class="loguitos me-3">
+            <img src="./assets/icons/pencil.svg" alt="pencil Illustration" class="loguitos me-3">
             <h2 class="text-center">SOBRE MÍ</h2>
         </div>
         <div class="container mt-5">
@@ -171,6 +233,82 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <img src="./assets/ilustrations/jump.png" alt="yo estudiando" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h3>-- Mis estudios</h3>
+                    <p class="desc">Estudio en la <strong>Universidad Nacional de La Matanza</strong> una Tecnicatura en Desarrollo Web, pero a lo largo de los años también hice diversos cursos para complementar lo que fui aprendiendo. Pese a que amo el Frontend, he de confesarles que también me encanta el Backend. Soy una persona que necesita "llenar huecos", me encanta poder rotar en diferentes roles en un mismo proyecto, por eso intento aprender todo lo posible acerca de lo que me gusta.</p>
+                    <div id="carouselEstudios" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner w-75 mx-auto">
+                            <div class="carousel-item active">
+                                <img src="./assets/certificados/educacionit.png" class="d-block w-100" alt="EducacionIT Java Spring Certificate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/certificados/coder.png" class="d-block w-100" alt="Coderhouse Web Developer">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/certificados/englishsup.jpg" class="d-block w-100" alt="English Superior">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/certificados/ilustration.jpg" class="d-block w-100" alt="Funiversity Ilustration Certificate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/certificados/qa.jpeg" class="d-block w-100" alt="QA Tester Egg">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/certificados/stemup.png" class="d-block w-100" alt="Stem Up">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstudios" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselEstudios" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+             
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h3>-- Mis ilustraciones</h3>
+                    <p class="desc">Empecé por diversión, pero con el tiempo empecé a recibir comisiones y me volví freelancer. No suelo compartir los trabajos personalizados porque, en algún punto de la historia, decidí mantener una estética y los pedidos no seguían una. En su lugar, acá muestro algunos que hice por diversión. Suelo hacer también pequeñas ilustraciones para las interfaces que debo diseñar. Amo combinar lo mejor de la programación con la ilustración.</p>
+                    <div id="carouselIlustraciones" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner w-75 mx-auto">
+                            <div class="carousel-item active">
+                                <img src="./assets/ilustrations/ella.png" class="d-block w-100" alt="ella ilustracion">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/ilustrations/enloquecer.png" class="d-block w-100" alt="enloquecer ilustracion">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/ilustrations/listeningto.png" class="d-block w-100" alt="escuchando ilustracion">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselIlustraciones" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselIlustraciones" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <img src="./assets/ilustrations/sheDraw.png" alt="yo dibujando" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        
+        
+        
         <div class="container">
             <h3 class="mt-5">-- Mis Skills</h3>
             <div class="row mt-4">
@@ -234,6 +372,7 @@
                 </div>
             </div>
         </div>
+    </div>
         
 </section>
 </main>

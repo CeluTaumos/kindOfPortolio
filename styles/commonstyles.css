@@ -3,13 +3,14 @@
   font-family: "IM Fell English", serif;
   font-weight: 400;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 /*texto*/
 h1{
     color: #141414 !important;  
 }
 h2{
-    font-family: "IM Fell French Canon SC", serif;
+font-family: "IM Fell French Canon SC", serif;
   font-weight: 400;
   font-style: normal;
   height: 1.438em;
@@ -20,34 +21,49 @@ h3{
 .desc{
     font-size: 1em;
 }
-a.bh {
-    font-style: italic;
-    text-decoration: none;
+a{
+   color: #141414 !important;
+   text-decoration: none;
+  
+}
+a:hover{
+    color: #ffffff !important;
+    transition: 0.2s;
 }
 
-a.bh:hover {
-    color: #141414 !important;
-}
+
 
 /* FONTS */
 .im-fell-double-pica-regular {
-    font-family: "IM Fell Double Pica", serif;
+    font-family: "IM Fell Double Pica", serif !important;
     font-weight: 400;
     font-style: normal;
   }
+
+
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
 
 /*COLORS */
 .dark-gray{
     color: #141414 !important;   
 }
-.dark-gray:hover {
-    color: #665e5e !important;
-    transition: 0.5s;
-}
+
 .gradient-light-pink{
 background: rgb(255,223,234);
 background: linear-gradient(114deg, rgba(255,223,234,1) 0%, rgba(255,183,195,1) 100%);
 }
+.gradient-pink{
+    background: rgb(255,223,234);
+    background: linear-gradient(0deg, rgba(255,223,234,1) 0%, rgba(255,183,195,1) 100%);
+    }
 .gradient-pinkish{
     background: rgb(255,228,225);
     background: linear-gradient(6deg, rgba(255,228,225,1) 26%, rgba(255,244,243,1) 93%);
