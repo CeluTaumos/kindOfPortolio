@@ -64,10 +64,21 @@ a:hover{
 background: rgb(255,223,234);
 background: linear-gradient(114deg, rgba(255,223,234,1) 0%, rgba(255,183,195,1) 100%);
 }
-.gradient-pink{
-    background: rgb(255,223,234);
-    background: linear-gradient(0deg, rgba(255,223,234,1) 0%, rgba(255,183,195,1) 100%);
-    }
+.gradient-pink {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  }
+  
+  .parallax-effect {
+    position: relative;
+    animation: parallaxMove 5s infinite alternate;
+  }
+  
+  @keyframes parallaxMove {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  
+  
 .gradient-pinkish{
     background: rgb(255,228,225);
     background: linear-gradient(6deg, rgba(255,228,225,1) 26%, rgba(255,244,243,1) 93%);
