@@ -1,6 +1,6 @@
 *{
   color: #444444 !important;
-  font-family: "IM Fell English", serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
@@ -17,6 +17,7 @@ font-family: "IM Fell French Canon SC", serif;
 }
 h3{
     color: #141414 !important;
+    font-family: "IM Fell English", serif;
 }
 h4{
     font-family: "IM Fell Great Primer SC", serif !important;
@@ -43,8 +44,9 @@ a:hover{
     font-weight: 400;
     font-style: normal;
   }
-
-
+.im-fell-English{
+font-family: "IM Fell English", serif;
+}
 .typewriter-animation {
   animation: 
     typewriter 5s steps(50) 1s 1 normal both, 
