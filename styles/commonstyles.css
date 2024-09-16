@@ -1,108 +1,114 @@
-*{
-  color: #444444 !important;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  scroll-behavior: smooth;
+/* Global Styles */
+* {
+    color: #444444 !important;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    scroll-behavior: smooth;
 }
-/*texto*/
-h1{
-    color: #141414 !important;  
+
+/* Headings */
+h1 {
+    color: #141414 !important;
 }
-h2{
-font-family: "IM Fell French Canon SC", serif;
-  font-weight: 400;
-  font-style: normal;
-  height: 1.438em;
+
+h2 {
+    font-family: "IM Fell French Canon SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 1.438em;
 }
-h3{
+
+h3 {
     color: #141414 !important;
     font-family: "IM Fell English", serif;
 }
-h4{
+
+h4 {
     font-family: "IM Fell Great Primer SC", serif !important;
     font-weight: 400;
     font-style: normal;
     color: #141414 !important;
 }
 
-a{
-   color: #141414 !important;
-   text-decoration: none;
-  
+/* Links */
+a {
+    color: #141414 !important;
+    text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: #ffffff !important;
     transition: 0.2s;
 }
 
-
-
-/* FONTS */
+/* Fonts */
 .im-fell-double-pica-regular {
     font-family: "IM Fell Double Pica", serif !important;
     font-weight: 400;
     font-style: normal;
-  }
-.im-fell-English{
-font-family: "IM Fell English", serif;
 }
+
+.im-fell-English {
+    font-family: "IM Fell English", serif;
+}
+
+/* Animations */
 .typewriter-animation {
-  animation: 
-    typewriter 5s steps(50) 1s 1 normal both, 
+    animation: typewriter 5s steps(50) 1s 1 normal both;
 }
+
 @keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
+    from { width: 0; }
+    to { width: 100%; }
 }
 
-
-/*COLORS */
-.dark-gray{
-    color: #141414 !important;   
-}
-
-.gradient-light-pink{
-background: rgb(255,223,234);
-background: linear-gradient(114deg, rgba(255,223,234,1) 0%, rgba(255,183,195,1) 100%);
-}
-.gradient-pink {
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
-  }
-  
-  .parallax-effect {
+.parallax-effect {
     position: relative;
     animation: parallaxMove 5s infinite alternate;
-  }
-  
-  @keyframes parallaxMove {
+}
+
+@keyframes parallaxMove {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
-  }
-  
-  
-.gradient-pinkish{
-    background: rgb(255,228,225);
-    background: linear-gradient(6deg, rgba(255,228,225,1) 26%, rgba(255,244,243,1) 93%);
+}
 
+/* Colors */
+.dark-gray {
+    color: #141414 !important;
 }
-.gradient-dusk{
-    background: rgb(255,203,164);
-    background: linear-gradient(184deg, rgba(255,203,164,1) 48%, rgba(255,183,195,1) 68%);
+
+.gradient-light-pink {
+    background: linear-gradient(114deg, rgba(255, 223, 234, 1) 0%, rgba(255, 183, 195, 1) 100%);
 }
-/*logotipos*/
+
+.gradient-pink {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+}
+
+.gradient-pinkish {
+    background: linear-gradient(6deg, rgba(255, 228, 225, 1) 26%, rgba(255, 244, 243, 1) 93%);
+}
+
+.gradient-dusk {
+    background: linear-gradient(184deg, rgba(255, 203, 164, 1) 48%, rgba(255, 183, 195, 1) 68%);
+}
+
+/* Logos */
 .logo {
     width: 5em;
     height: 2.25em;
 }
-.logo-intro{
+
+.logo-intro {
     width: 18.75em;
 }
-.loguitos{
+
+.loguitos {
     width: 3.938em;
 }
-/*cards y animaciones*/
 
+/* Cards and Animations */
 .card {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -111,14 +117,14 @@ background: linear-gradient(114deg, rgba(255,223,234,1) 0%, rgba(255,183,195,1) 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-image: url('https://www.transparenttextures.com/patterns/corrugation.png');
     background-size: cover;
+    position: relative;
 }
-
 
 .card:hover {
     transform: translateY(-10px) rotate(-2deg);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    animation: float 0.3s ease-in-out;
 }
-
 
 .card::before {
     content: '';
@@ -133,95 +139,62 @@ background: linear-gradient(114deg, rgba(255,223,234,1) 0%, rgba(255,183,195,1) 
     transform: rotate(2deg);
 }
 
-
-.card:hover {
-    animation: float 0.3s ease-in-out;
-}
-
-
 @keyframes float {
-    0% {
-        transform: translateY(0) rotate(0);
-    }
-    50% {
-        transform: translateY(-5px) rotate(-1deg);
-    }
-    100% {
-        transform: translateY(0) rotate(0);
-    }
+    0% { transform: translateY(0) rotate(0); }
+    50% { transform: translateY(-5px) rotate(-1deg); }
+    100% { transform: translateY(0) rotate(0); }
 }
-/*CARDS FOOTER */
+
+/* Cards Hablamos Section */
 .book {
     position: relative;
     border-radius: 10px;
     width: 220px;
     height: 300px;
     background-color: #fac393;
-    -webkit-box-shadow: 1px 1px 12px #444444;
-    box-shadow: 1px 1px 12px #444444 ;
-    -webkit-transform: preserve-3d;
-    -ms-transform: preserve-3d;
+    box-shadow: 1px 1px 12px #444444;
     transform: preserve-3d;
-    -webkit-perspective: 2000px;
     perspective: 2000px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     color: #141414;
-  }
-  
-  .cover {
+}
+
+.cover {
     top: 0;
     position: absolute;
- background-color: #ffcba4;
- background-image: url('https://www.transparenttextures.com/patterns/corrugation.png');
- background-size: cover;
+    background-color: #ffcba4;
+    background-image: url('https://www.transparenttextures.com/patterns/corrugation.png');
+    background-size: cover;
     width: 100%;
     height: 100%;
     border-radius: 10px;
     cursor: pointer;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    -webkit-transform-origin: 0;
-    -ms-transform-origin: 0;
     transform-origin: 0;
-    -webkit-box-shadow: 1px 1px 12px #444444 ;
-    box-shadow: 1px 1px 12px #444444 ;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    box-shadow: 1px 1px 12px #444444;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
+}
 
-  }
-  
-  .book:hover .cover {
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    -webkit-transform: rotatey(-80deg);
-    -ms-transform: rotatey(-80deg);
-    transform: rotatey(-80deg);
-  }
-  
+.book:hover .cover {
+    transform: rotateY(-80deg);
+}
+
+/* Social Links */
+.social-links i {
+    margin: 0 0.625em;
+}
+
 .social-links i:hover {
-    color: #ffffff !important; 
+    color: #ffffff !important;
     transition: 0.5ms;
     transform: scale(1.2);
 }
 
-.social-links i {
-    margin: 0 0.625em;
-}
+/* Visibility and Transitions */
 .fade-in {
     opacity: 0;
     transition: opacity 1s ease-in-out;
