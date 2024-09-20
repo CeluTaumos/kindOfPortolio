@@ -125,6 +125,62 @@ footer a:hover {
 .orange{
     background-color:#ffcba4;
 }
+/*Ilustrations*/
+.image-container {
+    position: relative;
+}
+
+.cele-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .cele-color {
+    opacity: 1;
+}
+
+.image-container:hover .cele-sketch {
+    opacity: 0;
+}
+
+.cele-sketch, .cele-color {
+    transition: opacity 0.3s ease-in-out;
+}
+/* Computer Illustration Hover Effect */
+.pc-container {
+    position: relative;
+}
+
+.pc-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.pc-container:hover .pc-color {
+    opacity: 1;
+}
+
+.pc-container:hover .pc-sketch {
+    opacity: 0;
+}
+
+.pc-sketch, .pc-color {
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+
 /* Logos */
 .logo {
     width: 5em;
