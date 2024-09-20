@@ -31,15 +31,43 @@ h4 {
     color: #141414 !important;
 }
 
-/* Links */
+/* General Links */
 a {
     color: #141414 !important;
     text-decoration: none;
+    position: relative; 
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff; 
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%; 
 }
 
 a:hover {
     color: #ffffff !important;
-    transition: 0.2s;
+    transition: color 0.2s ease;
+}
+
+/* Footer Links */
+footer a {
+    text-decoration: none !important;
+    color: #141414 !important;  /* O el color que prefieras */
+    position: static;  /* Evita el uso del ::after */
+}
+
+footer a:hover {
+    text-decoration: none !important;
+    color: #ffffff !important; /* O el color que prefieras */
 }
 
 /* Fonts */
@@ -94,6 +122,9 @@ a:hover {
     background: linear-gradient(184deg, rgba(255, 203, 164, 1) 48%, rgba(255, 183, 195, 1) 68%);
 }
 
+.orange{
+    background-color:#ffcba4;
+}
 /* Logos */
 .logo {
     width: 5em;
@@ -107,6 +138,7 @@ a:hover {
 .loguitos {
     width: 3.938em;
 }
+
 
 /* Cards and Animations */
 .card {

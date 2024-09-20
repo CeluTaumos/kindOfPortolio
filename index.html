@@ -52,8 +52,9 @@
     <div class="container d-flex justify-content-center align-items-center">
         <div class="row w-100">
             <div class="col-md-6 d-flex justify-content-end align-items-center fade-in" id="intro-img">
-                <img src="./assets/celeSketch.png" alt="Celena's Illustration" class="img-fluid  cele">
+                    <img src="./assets/celeSketch.png" alt="Celena's Illustration" class="img-fluid cele cele-sketch">
             </div>
+            
             <div class="col-md-6 d-flex flex-column justify-content-center align-items-center fade-in" id="intro-text">
                 <img src="./assets/celenaMoscovich-log.svg" alt="Celena Moscovich Logo" class="logo-intro  parallax-effect">
                 <h1 class="im-fell-double-pica-regular text-center">Full Stack Web Developer and Digital Illustrator</h1>
@@ -67,7 +68,7 @@
 <!-- Phrase Section -->
 <section id="phrase" class="py-3 gradient-pink">
     <div class="container text-center">
-        <p class="typewriter-animation fs-3 slide-up">“El código limpio es un arte, y un buen programador es un artista."</p>
+        <p class="typewriter-animation fs-3 slide-up im-fell-English ">“El código limpio es un arte, y un buen programador es un artista."</p>
         <p class="im-fell-double-pica-regular fs-4 dark-gray typewriter-animation slide-up">Robert C. Martin aka Uncle Bob</p>
     </div>
 </section>
@@ -126,7 +127,7 @@
                 <h3 class="mb-3 im-fell-English lead">Animalia</h3>
                 <p class="mb-4">
                     Este proyecto fue desarrollado para la materia Programación Web II, en la que aprendimos a aplicar el patrón MVC en un sitio de juegos en línea. El código fue implementado utilizando PHP, JavaScript (incluyendo AJAX), y Mustache para renderizar las vistas, entre otras tecnologías. Podés verlo completo 
-                    <a href="https://github.com/CeluTaumos/animalia--tpw2" class="fst-italic">aquí</a>.
+                    <a href="https://github.com/CeluTaumos/animalia--tpw2" class="fst-italic">acá</a>.
                 </p>
                 <div id="carouselEstudios" class="carousel slide scale-up" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -198,7 +199,7 @@
             <div class="col-md-6 mb-4 slide-up d-flex flex-column align-items-center text-justify" id="project4">
                 <h3 class="mb-3 im-fell-English lead">CarpiCursos</h3>
                 <p class="mb-4">
-                    Este es un proyecto realizado en colaboración, diseñado para el dictado de cursos de programación a través de la web. Aquí trabajamos con un equipo de 3 personas y el resultado fue un sitio funcional que permite inscripciones, pagos, y el acceso a cursos de capacitación. Lo pueden encontrar en 
+                    Este es un proyecto realizado en colaboración, diseñado para el dictado de cursos de programación a través de la web. Acá trabajamos con un equipo de 3 personas y el resultado fue un sitio funcional que permite inscripciones, pagos, y el acceso a cursos de capacitación. Lo pueden ver
                     <a href="https://github.com/CeluTaumos/CarpiCursos" class="fst-italic">acá</a>.
                 </p>
                 <div id="carouselCarpiCursos" class="carousel slide scale-up" data-bs-ride="carousel">
@@ -397,14 +398,14 @@
             <img src="./assets/icons/phone.svg" alt="phone Illustration" class="loguitos me-3">
             <h2 class="text-center">¿HABLAMOS?</h2>
         </div>
+        <p class="fs-4 text-start fade-in mb-3">Si te gusta llevar ideas coloridas a la vida, desenredar sistemas complicados o simplemente querés ver más...acá están mis redes para que estemos en contacto :</p>
         
-        <div class="row align-items-center">
+        <div class="row align-items-center mt-2">
             <div class="col-md-3 text-center text-md-start mb-3 mb-md-0 slide-up">
                 <img src="./assets/celenaMoscovich-log.svg" alt="Celena" class="img-fluid w-75">
             </div>
             
             <div class="col-md-9">
-                <p class="fs-4 text-end fade-in">Si te gusta llevar ideas coloridas a la vida, desenredar sistemas complicados o simplemente querés ver más...acá están mis redes para que estemos en contacto :</p>
                 <div class="row">
                     <!-- Book 1 -->
                     <div class="col-12 col-sm-6 col-md-3 mb-3 d-flex justify-content-center fade-in">
@@ -455,7 +456,7 @@
   
 </main>
 <!-- Footer -->
-<footer class="gradient-dusk py-3">
+<footer class="orange py-3">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-auto">
@@ -487,14 +488,14 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Configuración del IntersectionObserver
+       
         const observerOptions = {
-            root: null, // Observa el viewport
+            root: null, 
             rootMargin: '0px',
-            threshold: 0.1 // Porcentaje del elemento visible para activar la animación
+            threshold: 0.1 
         };
 
-        // Crear un nuevo IntersectionObserver
+      
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -503,7 +504,6 @@
             });
         }, observerOptions);
 
-        // Observa los elementos con las clases para animación
         document.querySelectorAll('.fade-in, .slide-up, .scale-up').forEach(element => {
             observer.observe(element);
         });
