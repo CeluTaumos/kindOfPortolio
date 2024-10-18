@@ -1,315 +1,342 @@
 /* Global Styles */
 * {
-    color: #444444 !important;
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    scroll-behavior: smooth;
+  color: #444444 !important;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
 }
 
 /* Headings */
 h1 {
-    color: #141414 !important;
+  color: #141414 !important;
 }
 
 h2 {
-    font-family: "IM Fell French Canon SC", serif;
-    font-weight: 400;
-    font-style: normal;
-    height: 1.438em;
+  font-family: "IM Fell French Canon SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 1.438em;
 }
 
 h3 {
-    color: #141414 !important;
-    font-family: "IM Fell English", serif;
+  color: #141414 !important;
+  font-family: "IM Fell English", serif;
 }
 
 h4 {
-    font-family: "IM Fell Great Primer SC", serif !important;
-    font-weight: 400;
-    font-style: normal;
-    color: #141414 !important;
+  font-family: "IM Fell Great Primer SC", serif !important;
+  font-weight: 400;
+  font-style: normal;
+  color: #141414 !important;
 }
 
 /* General Links */
 a {
-    color: #141414 !important;
-    text-decoration: none;
-    position: relative; 
+  color: #141414 !important;
+  text-decoration: none;
+  position: relative;
 }
 
 a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #ffffff; 
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
 }
 
 a:hover::after {
-    width: 100%; 
+  width: 100%;
 }
 
 a:hover {
-    color: #ffffff !important;
-    transition: color 0.2s ease;
+  color: #ffffff !important;
+  transition: color 0.2s ease;
+}
+.text-justify {
+  text-align: justify;
 }
 
 /* Footer Links */
 footer a {
-    text-decoration: none !important;
-    color: #141414 !important;  /* O el color que prefieras */
-    position: static;  /* Evita el uso del ::after */
+  text-decoration: none !important;
+  color: #141414 !important; /* O el color que prefieras */
+  position: static; /* Evita el uso del ::after */
 }
 
 footer a:hover {
-    text-decoration: none !important;
-    color: #ffffff !important; /* O el color que prefieras */
+  text-decoration: none !important;
+  color: #ffffff !important; /* O el color que prefieras */
 }
 
 /* Fonts */
 .im-fell-double-pica-regular {
-    font-family: "IM Fell Double Pica", serif !important;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "IM Fell Double Pica", serif !important;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .im-fell-English {
-    font-family: "IM Fell English", serif;
+  font-family: "IM Fell English", serif;
 }
 
 /* Animations */
 .typewriter-animation {
-    animation: typewriter 5s steps(50) 1s 1 normal both;
+  animation: typewriter 5s steps(50) 1s 1 normal both;
 }
 
 @keyframes typewriter {
-    from { width: 0; }
-    to { width: 100%; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .parallax-effect {
-    position: relative;
-    animation: parallaxMove 5s infinite alternate;
+  position: relative;
+  animation: parallaxMove 5s infinite alternate;
 }
 
 @keyframes parallaxMove {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 /* Colors */
 .dark-gray {
-    color: #141414 !important;
+  color: #141414 !important;
 }
 
 .gradient-light-pink {
-    background: linear-gradient(114deg, rgba(255, 223, 234, 1) 0%, rgba(255, 183, 195, 1) 100%);
+  background: linear-gradient(
+    114deg,
+    rgba(255, 223, 234, 1) 0%,
+    rgba(255, 183, 195, 1) 100%
+  );
 }
 
 .gradient-pink {
-    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
 }
 
 .gradient-pinkish {
-    background: linear-gradient(6deg, rgba(255, 228, 225, 1) 26%, rgba(255, 244, 243, 1) 93%);
+  background: linear-gradient(
+    6deg,
+    rgba(255, 228, 225, 1) 26%,
+    rgba(255, 244, 243, 1) 93%
+  );
 }
 
 .gradient-dusk {
-    background: linear-gradient(184deg, rgba(255, 203, 164, 1) 48%, rgba(255, 183, 195, 1) 68%);
+  background: linear-gradient(
+    184deg,
+    rgba(255, 203, 164, 1) 48%,
+    rgba(255, 183, 195, 1) 68%
+  );
 }
 
-.orange{
-    background-color:#ffcba4;
+.orange {
+  background-color: #ffcba4;
 }
 /*Ilustrations*/
 .image-container {
-    position: relative;
+  position: relative;
 }
 
 .cele-color {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .image-container:hover .cele-color {
-    opacity: 1;
+  opacity: 1;
 }
 
 .image-container:hover .cele-sketch {
-    opacity: 0;
+  opacity: 0;
 }
 
-.cele-sketch, .cele-color {
-    transition: opacity 0.3s ease-in-out;
+.cele-sketch,
+.cele-color {
+  transition: opacity 0.3s ease-in-out;
 }
 /* Computer Illustration Hover Effect */
 .pc-container {
-    position: relative;
+  position: relative;
 }
 
 .pc-color {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .pc-container:hover .pc-color {
-    opacity: 1;
+  opacity: 1;
 }
 
 .pc-container:hover .pc-sketch {
-    opacity: 0;
+  opacity: 0;
 }
 
-.pc-sketch, .pc-color {
-    transition: opacity 0.3s ease-in-out;
+.pc-sketch,
+.pc-color {
+  transition: opacity 0.3s ease-in-out;
 }
-
-
-
 
 /* Logos */
 .logo {
-    width: 5em;
-    height: 2.25em;
+  width: 5em;
+  height: 2.25em;
 }
 
 .logo-intro {
-    width: 18.75em;
+  width: 18.75em;
 }
 
 .loguitos {
-    width: 3.938em;
+  width: 3.938em;
 }
-
 
 /* Cards and Animations */
 .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-image: url('https://www.transparenttextures.com/patterns/corrugation.png');
-    background-size: cover;
-    position: relative;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-image: url("https://www.transparenttextures.com/patterns/corrugation.png");
+  background-size: cover;
+  position: relative;
 }
 
 .card:hover {
-    transform: translateY(-10px) rotate(-2deg);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-    animation: float 0.3s ease-in-out;
+  transform: translateY(-10px) rotate(-2deg);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  animation: float 0.3s ease-in-out;
 }
 
 .card::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    background: rgba(255, 255, 255, 0.5);
-    z-index: -1;
-    filter: blur(5px);
-    transform: rotate(2deg);
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+  filter: blur(5px);
+  transform: rotate(2deg);
 }
 
 @keyframes float {
-    0% { transform: translateY(0) rotate(0); }
-    50% { transform: translateY(-5px) rotate(-1deg); }
-    100% { transform: translateY(0) rotate(0); }
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-5px) rotate(-1deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
 }
 
 /* Cards Hablamos Section */
 .book {
-    position: relative;
-    border-radius: 10px;
-    width: 220px;
-    height: 300px;
-    background-color: #fac393;
-    box-shadow: 1px 1px 12px #444444;
-    transform: preserve-3d;
-    perspective: 2000px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #141414;
+  position: relative;
+  border-radius: 10px;
+  width: 220px;
+  height: 300px;
+  background-color: #fac393;
+  box-shadow: 1px 1px 12px #444444;
+  transform: preserve-3d;
+  perspective: 2000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #141414;
 }
 
 .cover {
-    top: 0;
-    position: absolute;
-    background-color: #ffcba4;
-    background-image: url('https://www.transparenttextures.com/patterns/corrugation.png');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.5s;
-    transform-origin: 0;
-    box-shadow: 1px 1px 12px #444444;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  top: 0;
+  position: absolute;
+  background-color: #ffcba4;
+  background-image: url("https://www.transparenttextures.com/patterns/corrugation.png");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  transform-origin: 0;
+  box-shadow: 1px 1px 12px #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .book:hover .cover {
-    transform: rotateY(-80deg);
+  transform: rotateY(-80deg);
 }
 
 /* Social Links */
 .social-links i {
-    margin: 0 0.625em;
+  margin: 0 0.625em;
 }
 
 .social-links i:hover {
-    color: #ffffff !important;
-    transition: 0.5ms;
-    transform: scale(1.2);
+  color: #ffffff !important;
+  transition: 0.5ms;
+  transform: scale(1.2);
 }
 
 /* Visibility and Transitions */
 .fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 .fade-in.visible {
-    opacity: 1;
+  opacity: 1;
 }
 
 .slide-up {
-    transform: translateY(20px);
-    opacity: 0;
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .slide-up.visible {
-    transform: translateY(0);
-    opacity: 1;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .scale-up {
-    transform: scale(0.9);
-    opacity: 0;
-    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .scale-up.visible {
-    transform: scale(1);
-    opacity: 1;
+  transform: scale(1);
+  opacity: 1;
 }
